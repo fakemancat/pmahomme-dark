@@ -6,7 +6,7 @@
 // semantic palette. Print rules are imported after this file.
 @media screen {
   :root,
-  [data-bs-theme="light"] {
+  [data-bs-theme='light'] {
     color-scheme: dark;
     --pma-canvas: #0d1117;
     --pma-surface: #161b22;
@@ -129,12 +129,12 @@
 
   a:focus-visible,
   button:focus-visible,
-  [role="button"]:focus-visible,
+  [role='button']:focus-visible,
   input:focus-visible,
   select:focus-visible,
   textarea:focus-visible,
   summary:focus-visible,
-  [tabindex]:not([tabindex="-1"]):focus-visible {
+  [tabindex]:not([tabindex='-1']):focus-visible {
     outline: 2px solid var(--pma-accent-hover) !important;
     outline-offset: 2px;
     box-shadow: none !important;
@@ -153,11 +153,13 @@
   .color_gray,
   .navigation_separator,
   .disabled,
-  [aria-disabled="true"] {
+  [aria-disabled='true'] {
     color: var(--pma-text-muted) !important;
   }
 
-  input:not([type="checkbox"]):not([type="radio"]):not([type="image"]):not([type="color"]),
+  input:not([type='checkbox']):not([type='radio']):not([type='image']):not(
+      [type='color']
+    ),
   select,
   textarea,
   .form-control,
@@ -195,6 +197,24 @@
     box-shadow: 0 0 0 0.2rem rgba(88, 166, 255, 0.2);
   }
 
+  select[multiple],
+  select[size]:not([size='1']) {
+    color: var(--pma-text);
+    background: var(--pma-surface);
+  }
+
+  select[multiple] option,
+  select[size]:not([size='1']) option {
+    color: var(--pma-text);
+    background: var(--pma-surface);
+  }
+
+  select[multiple] option:checked,
+  select[size]:not([size='1']) option:checked {
+    color: #07111f;
+    background: linear-gradient(var(--pma-accent), var(--pma-accent));
+  }
+
   input:disabled,
   select:disabled,
   textarea:disabled,
@@ -208,15 +228,15 @@
     opacity: 0.7;
   }
 
-  input[type="checkbox"],
-  input[type="radio"],
+  input[type='checkbox'],
+  input[type='radio'],
   .form-check-input {
     background-color: var(--pma-surface);
     border-color: var(--pma-border-strong);
   }
 
-  input[type="checkbox"]:checked,
-  input[type="radio"]:checked,
+  input[type='checkbox']:checked,
+  input[type='radio']:checked,
   .form-check-input:checked {
     background-color: var(--pma-accent);
     border-color: var(--pma-accent);
@@ -224,9 +244,9 @@
 
   .btn,
   button:not(.close):not(.btn-close),
-  input[type="button"],
-  input[type="reset"],
-  input[type="submit"] {
+  input[type='button'],
+  input[type='reset'],
+  input[type='submit'] {
     color: var(--pma-text);
     border-color: var(--pma-border-strong);
     background-color: #30363d;
@@ -237,9 +257,9 @@
 
   .btn:hover,
   button:not(.close):not(.btn-close):hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type='button']:hover,
+  input[type='reset']:hover,
+  input[type='submit']:hover {
     color: #fff;
     border-color: #6e7681;
     background-color: #3b434d;
@@ -353,7 +373,11 @@
 
   #pma_navigation {
     color: var(--pma-text);
-    background: linear-gradient(to right, var(--pma-surface), var(--pma-canvas));
+    background: linear-gradient(
+      to right,
+      var(--pma-surface),
+      var(--pma-canvas)
+    );
     border-right: 1px solid var(--pma-border);
     box-shadow: 4px 0 18px rgba(0, 0, 0, 0.25);
   }
@@ -480,7 +504,8 @@
   .nav-tabs .nav-item.show .nav-link {
     color: var(--pma-text);
     background: var(--pma-surface-raised);
-    border-color: var(--pma-border-strong) var(--pma-border-strong) var(--pma-surface-raised);
+    border-color: var(--pma-border-strong) var(--pma-border-strong)
+      var(--pma-surface-raised);
   }
 
   .nav-pills .nav-link {
@@ -526,6 +551,7 @@
   }
 
   .pma-fieldset,
+  .pma-fieldset .pma-fieldset,
   fieldset,
   .card,
   .list-group-item,
@@ -704,14 +730,14 @@
     border-color: var(--pma-border);
   }
 
-  .navigation input[type="submit"],
+  .navigation input[type='submit'],
   .navigation .btn-link {
     color: var(--pma-accent);
     background: transparent;
     text-shadow: none;
   }
 
-  .navigation input[type="submit"]:hover,
+  .navigation input[type='submit']:hover,
   .navigation input.edit_mode_active,
   .navigation .btn-link:hover {
     color: var(--pma-text);
