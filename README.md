@@ -4,6 +4,9 @@
 
 A dark graphite theme for phpMyAdmin, based on the default `pmahomme` theme.
 
+This is an independent community project. It is not an official phpMyAdmin
+release and is not endorsed or supported by the phpMyAdmin project.
+
 ![pmahomme-dark preview](screen.png)
 
 ## About
@@ -51,7 +54,7 @@ If the theme selector is not visible, make sure the theme manager is enabled:
 $cfg['ThemeManager'] = true;
 ```
 
-For more details, see the [official phpMyAdmin custom themes documentation](https://docs.phpmyadmin.net/en/release_5_2_0/themes.html).
+For more details, see the [official phpMyAdmin custom themes documentation](https://docs.phpmyadmin.net/en/release_5_2_3/themes.html).
 
 ## Updating
 
@@ -60,3 +63,21 @@ Replace the existing `themes/pmahomme-dark` directory with the files from the ne
 ## Uninstalling
 
 Switch to another theme first, then remove the `themes/pmahomme-dark` directory. Also remove or change the `ThemeDefault` setting if you added it.
+
+## Origin and modifications
+
+The theme is derived from the `pmahomme` theme shipped with phpMyAdmin 5.2.3.
+The original theme is copyrighted by its respective phpMyAdmin contributors. Dark
+palette, styling changes, generated stylesheets, metadata, documentation, and
+the preview image were added or modified by Fakeman Cat on August 18, 2026.
+
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for upstream attribution
+and licenses that apply to bundled third-party assets.
+
+## License
+
+Except for the third-party components identified separately, the theme code
+and original modifications are distributed under the GNU General Public
+License, version 2 only (`GPL-2.0-only`). See [LICENSE](LICENSE) for the
+complete GPL terms and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for
+the licenses retained by bundled third-party components.

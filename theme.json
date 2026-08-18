@@ -2,7 +2,7 @@
   "name": "pmahomme-dark",
   "version": "1.0",
   "description": "Dark graphite variant of the default phpMyAdmin theme",
-  "author": "phpMyAdmin developers",
-  "url": "https://www.phpmyadmin.net/",
+  "author": "Fakeman Cat",
+  "url": "https://github.com/fakemancat/pmahomme-dark",
   "supports": ["5.0", "5.1", "5.2"]
 }
