@@ -1,0 +1,252 @@
+// configures general layout for detailed layout configuration please refer to the css files
+
+// pmahomme-dark semantic palette
+$surface-canvas: #0d1117;
+$surface-default: #161b22;
+$surface-raised: #1f2630;
+$surface-overlay: #252d38;
+$surface-hover: #243142;
+$surface-selected: #273b52;
+$text-primary: #e6edf3;
+$text-secondary: #aeb8c4;
+$text-disabled: #7d8590;
+$border-default: #46505d;
+$border-strong: #57606a;
+$accent-primary: #58a6ff;
+$accent-primary-hover: #79c0ff;
+$success: #3fb950;
+$info: #58a6ff;
+$warning: #d29922;
+$danger: #f85149;
+
+// navi frame
+
+// navi frame width
+$navi-width: 240px;
+
+// foreground (text) color for the navi frame
+$navi-color: $text-primary;
+
+// background for the navi frame
+$navi-background: $surface-default;
+$navi-right-gradient: $surface-canvas;
+
+// foreground (text) color of the pointer in navi frame
+$navi-pointer-color: $text-primary;
+
+// background of the pointer in navi frame
+$navi-pointer-background: $surface-hover;
+
+// main frame
+
+// foreground (text) color for the main frame
+$main-color: $text-primary;
+
+// foreground (text) color of the pointer in browse mode
+$browse-pointer-color: $text-primary;
+
+// background of the pointer in browse mode
+$browse-pointer-background: $surface-hover;
+
+// foreground (text) color of the marker (visually marks row by clicking on it)
+// in browse mode
+$browse-marker-color: $accent-primary-hover;
+
+// background of the marker (visually marks row by clicking on it) in browse mode
+$browse-marker-background: $surface-selected;
+
+// tables
+
+// border
+$border: 0;
+// table header and footer color
+$th-background: $surface-raised;
+// table header and footer background
+$th-color: $text-primary;
+// table data row background
+$bg-one: $surface-default;
+// table data row background, alternate
+$bg-two: $surface-raised;
+
+// Bootstrap
+// ---------
+
+// Body
+
+$body-color: $main-color;
+$body-bg: $surface-canvas;
+
+// Links
+
+$link-color: $accent-primary;
+$link-decoration: none;
+$link-hover-color: $accent-primary-hover;
+$link-hover-decoration: underline;
+
+// Components
+
+$border-radius: 0.25rem;
+
+// Typography
+
+$font-family-base: sans-serif;
+$font-family-monospace: monospace;
+
+$font-size-base: 0.82rem;
+
+$h1-font-size: 140%;
+$h2-font-size: 2em;
+$h3-font-size: 1rem;
+
+// Tables
+
+$table-cell-padding-y: 0.1em;
+$table-cell-padding-x: 0.3em;
+$table-cell-padding-y-sm: $table-cell-padding-y;
+$table-cell-padding-x-sm: $table-cell-padding-x;
+$table-color: $text-primary;
+$table-bg: $surface-default;
+$table-head-bg: $surface-raised;
+$table-head-color: $th-color;
+$table-striped-order: even;
+$table-striped-bg: $surface-raised;
+$table-hover-color: $browse-pointer-color;
+$table-border-color: $border-default;
+$table-border-width: 0;
+$table-caption-color: $table-head-color;
+
+// Buttons
+
+$enable-gradients: true;
+$enable-shadows: true;
+$enable-transitions: false;
+
+$primary: $accent-primary;
+$secondary: #30363d;
+
+$btn-border-radius: 0.85rem;
+$btn-line-height: 1.15;
+
+// Dropdowns
+
+$dropdown-padding-y: 0;
+$dropdown-item-padding-y: 0;
+$dropdown-item-padding-x: 0;
+
+// Forms
+
+$form-check-input-margin-y: 0.1rem;
+$input-bg: $surface-default;
+$input-color: $text-primary;
+$input-border-color: $border-strong;
+$input-focus-bg: $surface-default;
+$input-focus-color: $text-primary;
+$input-focus-border-color: $accent-primary-hover;
+$input-placeholder-color: $text-disabled;
+$input-disabled-bg: $surface-raised;
+$form-select-bg: $surface-default;
+$form-select-color: $text-primary;
+$form-select-border-color: $border-strong;
+$form-check-input-bg: $surface-default;
+$form-check-input-border: 1px solid $border-strong;
+$form-check-input-checked-bg-color: $accent-primary;
+
+// Navs
+
+$nav-tabs-border-color: $border-default;
+$nav-tabs-link-active-border-color: $border-default $border-default $surface-raised;
+$nav-tabs-link-hover-border-color: $border-default $border-default $border-strong;
+$nav-tabs-link-active-color: $text-primary;
+$nav-tabs-link-active-bg: $surface-raised;
+
+// Navbar
+
+$enable-caret: false;
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+$navbar-light-color: $accent-primary;
+$navbar-light-hover-color: $accent-primary-hover;
+$navbar-light-active-color: $accent-primary-hover;
+$navbar-light-disabled-color: $text-disabled;
+
+// Pagination
+
+$pagination-color: $accent-primary;
+$pagination-bg: $surface-default;
+$pagination-border-color: $border-default;
+$pagination-hover-color: $accent-primary-hover;
+$pagination-hover-bg: $surface-hover;
+$pagination-hover-border-color: $border-strong;
+$pagination-active-color: $surface-canvas;
+$pagination-active-bg: $accent-primary;
+$pagination-active-border-color: $accent-primary;
+$pagination-disabled-color: $text-disabled;
+$pagination-disabled-bg: $surface-raised;
+$pagination-disabled-border-color: $border-default;
+
+// Card
+
+$card-border-color: $border-default;
+$card-bg: $surface-default;
+$card-cap-bg: $surface-raised;
+$card-color: $text-primary;
+
+// Accordion
+
+$accordion-button-padding-y: 0.375rem;
+$accordion-button-padding-x: 0.75rem;
+$accordion-color: $text-primary;
+$accordion-bg: $surface-default;
+$accordion-border-color: $border-default;
+$accordion-button-color: $text-primary;
+$accordion-button-bg: $surface-raised;
+$accordion-button-active-color: $accent-primary-hover;
+$accordion-button-active-bg: $navi-background;
+
+// Breadcrumbs
+
+$breadcrumb-navbar-padding-y: 0.1rem;
+$breadcrumb-navbar-padding-x: 2.2em;
+$breadcrumb-navbar-margin-bottom: 0;
+$breadcrumb-navbar-bg: $surface-raised;
+$breadcrumb-divider-color: $text-secondary;
+$breadcrumb-divider: quote("»");
+
+// Modals
+
+$modal-inner-padding: 0.75rem;
+$modal-footer-margin-between: 0.1rem;
+$modal-header-padding-y: 0.4rem;
+$modal-content-color: $text-primary;
+$modal-content-bg: $surface-default;
+$modal-content-border-color: $border-default;
+$modal-header-border-color: $border-default;
+$modal-footer-border-color: $border-default;
+
+// Dropdowns and tooltips
+$dropdown-color: $text-primary;
+$dropdown-bg: $surface-overlay;
+$dropdown-border-color: $border-default;
+$dropdown-link-color: $text-primary;
+$dropdown-link-hover-color: $text-primary;
+$dropdown-link-hover-bg: $surface-hover;
+$dropdown-link-active-color: $surface-canvas;
+$dropdown-link-active-bg: $accent-primary;
+$dropdown-link-disabled-color: $text-disabled;
+$tooltip-color: $text-primary;
+$tooltip-bg: $surface-overlay;
+
+// Alert
+
+$alert-margin-bottom: 0.5em;
+$alert-border-radius: 5px;
+
+// List group
+
+$list-group-bg: inherit;
+$list-group-item-padding-x: 0.75rem;
+$list-group-item-padding-y: 0.375rem;
+
+// Forms
+
+$label-margin-bottom: 0;
